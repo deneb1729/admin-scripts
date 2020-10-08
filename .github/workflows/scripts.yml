@@ -1,0 +1,13 @@
+name: Scripts testing
+
+on: [push]
+
+jobs:
+    docker:
+        runs-on: ubuntu-18.04
+        steps:
+            - uses: actions/checkout@v1
+            - name: docker installer
+              run: |
+                chmod +x docker-installer.sh
+                ./docker-installer.sh
