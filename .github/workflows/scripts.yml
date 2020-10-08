@@ -10,4 +10,4 @@ jobs:
             - name: docker installer
               run: |
                 chmod +x docker-installer.sh
-                ./docker-installer.sh
+                sudo ./docker-installer.sh
